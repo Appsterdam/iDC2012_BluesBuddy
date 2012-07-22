@@ -22,7 +22,17 @@
 		1AB8272815B9F29400715919 /* BluesBuddiesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB8272715B9F29400715919 /* BluesBuddiesTests.m */; };
 		1AB8273215B9F58D00715919 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AB8273115B9F58D00715919 /* MapKit.framework */; };
 		1AB8273515B9FE4600715919 /* PhoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB8273415B9FE4600715919 /* PhoneViewController.m */; };
+		3619FE0015BC21F9002B3C48 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 3619FDFF15BC21F9002B3C48 /* background.png */; };
 		3619FE0315BC230F002B3C48 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3619FE0215BC230F002B3C48 /* Default.png */; };
+		3619FE1115BC284A002B3C48 /* angry.png in Resources */ = {isa = PBXBuildFile; fileRef = 3619FE0815BC284A002B3C48 /* angry.png */; };
+		3619FE1215BC284A002B3C48 /* anxious.png in Resources */ = {isa = PBXBuildFile; fileRef = 3619FE0915BC284A002B3C48 /* anxious.png */; };
+		3619FE1315BC284A002B3C48 /* cheeky.png in Resources */ = {isa = PBXBuildFile; fileRef = 3619FE0A15BC284A002B3C48 /* cheeky.png */; };
+		3619FE1415BC284A002B3C48 /* dazed.png in Resources */ = {isa = PBXBuildFile; fileRef = 3619FE0B15BC284A002B3C48 /* dazed.png */; };
+		3619FE1515BC284A002B3C48 /* ecstatic.png in Resources */ = {isa = PBXBuildFile; fileRef = 3619FE0C15BC284A002B3C48 /* ecstatic.png */; };
+		3619FE1615BC284A002B3C48 /* happy.png in Resources */ = {isa = PBXBuildFile; fileRef = 3619FE0D15BC284A002B3C48 /* happy.png */; };
+		3619FE1715BC284A002B3C48 /* hopeful.png in Resources */ = {isa = PBXBuildFile; fileRef = 3619FE0E15BC284A002B3C48 /* hopeful.png */; };
+		3619FE1815BC284A002B3C48 /* sad.png in Resources */ = {isa = PBXBuildFile; fileRef = 3619FE0F15BC284A002B3C48 /* sad.png */; };
+		3619FE1915BC284A002B3C48 /* sadish.png in Resources */ = {isa = PBXBuildFile; fileRef = 3619FE1015BC284A002B3C48 /* sadish.png */; };
 		3695E26715BBED560036D5AF /* MoodPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3695E26615BBED560036D5AF /* MoodPickerViewController.m */; };
 		3695E26A15BBEE590036D5AF /* Mood.m in Sources */ = {isa = PBXBuildFile; fileRef = 3695E26915BBEE590036D5AF /* Mood.m */; };
 		8D16214D15BB068700F83C1F /* small_five.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D16214715BB068700F83C1F /* small_five.png */; };
@@ -72,7 +82,17 @@
 		1AB8273115B9F58D00715919 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		1AB8273315B9FE4600715919 /* PhoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhoneViewController.h; sourceTree = "<group>"; };
 		1AB8273415B9FE4600715919 /* PhoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhoneViewController.m; sourceTree = "<group>"; };
+		3619FDFF15BC21F9002B3C48 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		3619FE0215BC230F002B3C48 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		3619FE0815BC284A002B3C48 /* angry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = angry.png; sourceTree = "<group>"; };
+		3619FE0915BC284A002B3C48 /* anxious.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = anxious.png; sourceTree = "<group>"; };
+		3619FE0A15BC284A002B3C48 /* cheeky.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cheeky.png; sourceTree = "<group>"; };
+		3619FE0B15BC284A002B3C48 /* dazed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dazed.png; sourceTree = "<group>"; };
+		3619FE0C15BC284A002B3C48 /* ecstatic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ecstatic.png; sourceTree = "<group>"; };
+		3619FE0D15BC284A002B3C48 /* happy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = happy.png; sourceTree = "<group>"; };
+		3619FE0E15BC284A002B3C48 /* hopeful.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hopeful.png; sourceTree = "<group>"; };
+		3619FE0F15BC284A002B3C48 /* sad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sad.png; sourceTree = "<group>"; };
+		3619FE1015BC284A002B3C48 /* sadish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sadish.png; sourceTree = "<group>"; };
 		3695E26515BBED560036D5AF /* MoodPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoodPickerViewController.h; sourceTree = "<group>"; };
 		3695E26615BBED560036D5AF /* MoodPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoodPickerViewController.m; sourceTree = "<group>"; };
 		3695E26815BBEE590036D5AF /* Mood.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mood.h; sourceTree = "<group>"; };
@@ -127,6 +147,7 @@
 			children = (
 				1AB826FF15B9F29400715919 /* BluesBuddies */,
 				1AB8272015B9F29400715919 /* BluesBuddiesTests */,
+				3619FE0715BC284A002B3C48 /* Emotions */,
 				8D16215815BB264200F83C1F /* Images */,
 				1AB826F815B9F29400715919 /* Frameworks */,
 				1AB826F615B9F29400715919 /* Products */,
@@ -214,6 +235,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		3619FE0715BC284A002B3C48 /* Emotions */ = {
+			isa = PBXGroup;
+			children = (
+				3619FE0815BC284A002B3C48 /* angry.png */,
+				3619FE0915BC284A002B3C48 /* anxious.png */,
+				3619FE0A15BC284A002B3C48 /* cheeky.png */,
+				3619FE0B15BC284A002B3C48 /* dazed.png */,
+				3619FE0C15BC284A002B3C48 /* ecstatic.png */,
+				3619FE0D15BC284A002B3C48 /* happy.png */,
+				3619FE0E15BC284A002B3C48 /* hopeful.png */,
+				3619FE0F15BC284A002B3C48 /* sad.png */,
+				3619FE1015BC284A002B3C48 /* sadish.png */,
+			);
+			name = Emotions;
+			path = BluesBuddies/Emotions;
+			sourceTree = "<group>";
+		};
 		8D16215815BB264200F83C1F /* Images */ = {
 			isa = PBXGroup;
 			children = (
@@ -224,6 +262,7 @@
 				8D16214A15BB068700F83C1F /* small_six.png */,
 				8D16214B15BB068700F83C1F /* small_three.png */,
 				8D16214C15BB068700F83C1F /* small_two.png */,
+				3619FDFF15BC21F9002B3C48 /* background.png */,
 			);
 			name = Images;
 			path = BluesBuddies;
@@ -308,7 +347,17 @@
 				8D16215015BB068700F83C1F /* small_six.png in Resources */,
 				8D16215115BB068700F83C1F /* small_three.png in Resources */,
 				8D16215215BB068700F83C1F /* small_two.png in Resources */,
+				3619FE0015BC21F9002B3C48 /* background.png in Resources */,
 				3619FE0315BC230F002B3C48 /* Default.png in Resources */,
+				3619FE1115BC284A002B3C48 /* angry.png in Resources */,
+				3619FE1215BC284A002B3C48 /* anxious.png in Resources */,
+				3619FE1315BC284A002B3C48 /* cheeky.png in Resources */,
+				3619FE1415BC284A002B3C48 /* dazed.png in Resources */,
+				3619FE1515BC284A002B3C48 /* ecstatic.png in Resources */,
+				3619FE1615BC284A002B3C48 /* happy.png in Resources */,
+				3619FE1715BC284A002B3C48 /* hopeful.png in Resources */,
+				3619FE1815BC284A002B3C48 /* sad.png in Resources */,
+				3619FE1915BC284A002B3C48 /* sadish.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

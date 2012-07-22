@@ -32,7 +32,8 @@
 	int moodIndex = [sender tag] - 1;
 	Mood *mood = [[Mood allMoods] objectAtIndex:moodIndex];
 	[mood makeCurrent];
-	
+
+	[UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
 	[[self presentingViewController] dismissModalViewControllerAnimated:YES];
 }
 

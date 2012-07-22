@@ -9,14 +9,14 @@
 #import "Mood.h"
 
 NSString * const MoodNameHappy = @"Happy";
-NSString * const MoodNameCool = @"Cool";
+NSString * const MoodNameAngry = @"Angry";
 NSString * const MoodNameDazed = @"Dazed";
 NSString * const MoodNameSad = @"Sad";
 NSString * const MoodNameSadIsh = @"SadIsh";
 NSString * const MoodNameHopeful = @"Hopeful";
 NSString * const MoodNameEcstatic = @"Ecstatic";
 NSString * const MoodNameAnxious = @"Anxious";
-NSString * const MoodNameLove = @"Love";
+NSString * const MoodNameCheeky = @"Cheeky";
 
 static Mood *CurrentMood;
 
@@ -37,14 +37,14 @@ static Mood *CurrentMood;
 	if (!moodsByName) {
 		moodsByName = [NSDictionary dictionaryWithObjectsAndKeys:
 		   [[Mood alloc] initWithName:MoodNameHappy], MoodNameHappy,
-		   [[Mood alloc] initWithName:MoodNameCool], MoodNameCool,
+		   [[Mood alloc] initWithName:MoodNameAngry], MoodNameAngry,
 		   [[Mood alloc] initWithName:MoodNameDazed], MoodNameDazed,
 		   [[Mood alloc] initWithName:MoodNameSad], MoodNameSad,
 		   [[Mood alloc] initWithName:MoodNameSadIsh], MoodNameSadIsh,
 		   [[Mood alloc] initWithName:MoodNameHopeful], MoodNameHopeful,
 		   [[Mood alloc] initWithName:MoodNameEcstatic], MoodNameEcstatic,
 		   [[Mood alloc] initWithName:MoodNameAnxious], MoodNameAnxious,
-		   [[Mood alloc] initWithName:MoodNameLove], MoodNameLove,
+		   [[Mood alloc] initWithName:MoodNameCheeky], MoodNameCheeky,
 		nil];
 	}
 	
@@ -89,7 +89,7 @@ static Mood *CurrentMood;
 
 - (UIImage *)image
 {
-	NSString *imageName = [NSString stringWithFormat:@"%@Mood", self.name];
+	NSString *imageName = [self.name lowercaseString];
 	return [UIImage imageNamed:imageName];
 }
 
