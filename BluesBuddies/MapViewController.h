@@ -20,6 +20,6 @@
 
 - (void)fetchCoordinates;
 
--(IBAction)gotoNextScreen:(id)sender;
+//-(IBAction)gotoNextScreen:(id)sender;
 
 @end

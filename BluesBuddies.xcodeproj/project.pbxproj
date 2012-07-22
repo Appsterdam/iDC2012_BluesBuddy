@@ -31,6 +31,8 @@
 		8D16215115BB068700F83C1F /* small_three.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D16214B15BB068700F83C1F /* small_three.png */; };
 		8D16215215BB068700F83C1F /* small_two.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D16214C15BB068700F83C1F /* small_two.png */; };
 		8D16216215BB4DC600F83C1F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D16216115BB4DC600F83C1F /* CoreLocation.framework */; };
+		8DDD381915BBF18600EDD921 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DDD381815BBF18600EDD921 /* ProfileViewController.m */; };
+		8DDD381D15BBF6C300EDD921 /* ArrangeMeetingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DDD381C15BBF6C300EDD921 /* ArrangeMeetingViewController.m */; };
 		8DE028D115BA8B5000E59BE2 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE028D015BA8B5000E59BE2 /* MapViewController.m */; };
 		8DE028DA15BACED300E59BE2 /* IntroductionScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE028D915BACED300E59BE2 /* IntroductionScrollViewController.m */; };
 		8DE028EC15BAD7C300E59BE2 /* IntroductionImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE028EB15BAD7C200E59BE2 /* IntroductionImageViewController.m */; };
@@ -80,6 +82,10 @@
 		8D16214B15BB068700F83C1F /* small_three.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small_three.png; sourceTree = "<group>"; };
 		8D16214C15BB068700F83C1F /* small_two.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small_two.png; sourceTree = "<group>"; };
 		8D16216115BB4DC600F83C1F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		8DDD381715BBF18600EDD921 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		8DDD381815BBF18600EDD921 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		8DDD381B15BBF6C300EDD921 /* ArrangeMeetingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrangeMeetingViewController.h; sourceTree = "<group>"; };
+		8DDD381C15BBF6C300EDD921 /* ArrangeMeetingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrangeMeetingViewController.m; sourceTree = "<group>"; };
 		8DE028CF15BA8B5000E59BE2 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		8DE028D015BA8B5000E59BE2 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		8DE028D815BACED300E59BE2 /* IntroductionScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroductionScrollViewController.h; sourceTree = "<group>"; };
@@ -160,6 +166,10 @@
 				1AB8271115B9F29400715919 /* ViewController.h */,
 				1AB8271215B9F29400715919 /* ViewController.m */,
 				1AB8273315B9FE4600715919 /* PhoneViewController.h */,
+				8DDD381715BBF18600EDD921 /* ProfileViewController.h */,
+				8DDD381815BBF18600EDD921 /* ProfileViewController.m */,
+				8DDD381B15BBF6C300EDD921 /* ArrangeMeetingViewController.h */,
+				8DDD381C15BBF6C300EDD921 /* ArrangeMeetingViewController.m */,
 				1AB8273415B9FE4600715919 /* PhoneViewController.m */,
 				8DE028CF15BA8B5000E59BE2 /* MapViewController.h */,
 				8DE028D015BA8B5000E59BE2 /* MapViewController.m */,
@@ -338,6 +348,8 @@
 				8DE028EC15BAD7C300E59BE2 /* IntroductionImageViewController.m in Sources */,
 				3695E26715BBED560036D5AF /* MoodPickerViewController.m in Sources */,
 				3695E26A15BBEE590036D5AF /* Mood.m in Sources */,
+				8DDD381915BBF18600EDD921 /* ProfileViewController.m in Sources */,
+				8DDD381D15BBF6C300EDD921 /* ArrangeMeetingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -139,11 +139,11 @@
     }];
 }
 
--(IBAction)gotoNextScreen:(id)sender {
-    PhoneViewController *pvc = [[PhoneViewController alloc] initWithNibName:@"PhoneViewController"bundle: nil];
-    
-    [self.navigationController pushViewController:pvc animated:YES];
-}
+//-(IBAction)gotoNextScreen:(id)sender {
+//    PhoneViewController *pvc = [[PhoneViewController alloc] initWithNibName:@"PhoneViewController"bundle: nil];
+//    
+//    [self.navigationController pushViewController:pvc animated:YES];
+//}
 
 
 @end
