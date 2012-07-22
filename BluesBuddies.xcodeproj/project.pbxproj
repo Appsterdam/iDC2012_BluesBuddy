@@ -22,6 +22,7 @@
 		1AB8272815B9F29400715919 /* BluesBuddiesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB8272715B9F29400715919 /* BluesBuddiesTests.m */; };
 		1AB8273215B9F58D00715919 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AB8273115B9F58D00715919 /* MapKit.framework */; };
 		1AB8273515B9FE4600715919 /* PhoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB8273415B9FE4600715919 /* PhoneViewController.m */; };
+		3619FE0315BC230F002B3C48 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3619FE0215BC230F002B3C48 /* Default.png */; };
 		3695E26715BBED560036D5AF /* MoodPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3695E26615BBED560036D5AF /* MoodPickerViewController.m */; };
 		3695E26A15BBEE590036D5AF /* Mood.m in Sources */ = {isa = PBXBuildFile; fileRef = 3695E26915BBEE590036D5AF /* Mood.m */; };
 		8D16214D15BB068700F83C1F /* small_five.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D16214715BB068700F83C1F /* small_five.png */; };
@@ -71,6 +72,7 @@
 		1AB8273115B9F58D00715919 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		1AB8273315B9FE4600715919 /* PhoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhoneViewController.h; sourceTree = "<group>"; };
 		1AB8273415B9FE4600715919 /* PhoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhoneViewController.m; sourceTree = "<group>"; };
+		3619FE0215BC230F002B3C48 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		3695E26515BBED560036D5AF /* MoodPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoodPickerViewController.h; sourceTree = "<group>"; };
 		3695E26615BBED560036D5AF /* MoodPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoodPickerViewController.m; sourceTree = "<group>"; };
 		3695E26815BBEE590036D5AF /* Mood.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mood.h; sourceTree = "<group>"; };
@@ -215,6 +217,7 @@
 		8D16215815BB264200F83C1F /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				3619FE0215BC230F002B3C48 /* Default.png */,
 				8D16214715BB068700F83C1F /* small_five.png */,
 				8D16214815BB068700F83C1F /* small_four.png */,
 				8D16214915BB068700F83C1F /* small_one.png */,
@@ -305,6 +308,7 @@
 				8D16215015BB068700F83C1F /* small_six.png in Resources */,
 				8D16215115BB068700F83C1F /* small_three.png in Resources */,
 				8D16215215BB068700F83C1F /* small_two.png in Resources */,
+				3619FE0315BC230F002B3C48 /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
