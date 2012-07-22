@@ -12,7 +12,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+	dispatch_async(dispatch_get_main_queue(), ^{
+		UIViewController *rootController = [[self window] rootViewController];
+		UIStoryboard *storyboard = [rootController storyboard];
+		UIViewController *picker = [storyboard instantiateViewControllerWithIdentifier:@"MoodPicker"];
+		[rootController presentModalViewController:picker animated:NO];
+    });	
+	
     return YES;
 }
 							
