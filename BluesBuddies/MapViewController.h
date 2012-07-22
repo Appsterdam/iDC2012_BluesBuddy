@@ -11,7 +11,7 @@
 
 #define METERS_PER_MILE 1609.344
 
-@interface MapViewController : UIViewController  <MKMapViewDelegate, UISearchBarDelegate>
+@interface MapViewController : UIViewController  <MKMapViewDelegate, UISearchDisplayDelegate, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate>
 
 @property (weak, nonatomic) IBOutlet MKMapView *buddyMapView;
 @property (weak, nonatomic) IBOutlet UISearchBar *buddySearchBar;

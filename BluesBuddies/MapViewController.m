@@ -11,11 +11,17 @@
 
 @interface MapViewController ()
 
+@property (strong, nonatomic) NSString *searchString;
+@property (strong, nonatomic) UISearchDisplayController *searchController;
+
 @end
 
 @implementation MapViewController
+
 @synthesize buddyMapView = _buddyMapView;
 @synthesize buddySearchBar = _buddySearchBar;
+@synthesize searchController = _searchController;
+@synthesize searchString = _searchString;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -30,7 +36,13 @@
 {
     [super viewDidLoad];
     
-    self.buddySearchBar.delegate = self;
+	UISearchDisplayController *searchController = [[UISearchDisplayController alloc] initWithSearchBar:self.buddySearchBar contentsController:self];
+	searchController.delegate = self;
+	searchController.searchResultsDataSource = self;
+	searchController.searchResultsDelegate = self;
+	searchController.searchBar.delegate = self;
+	
+	self.searchController = searchController;
 }
 
 - (void)didReceiveMemoryWarning
@@ -49,7 +61,46 @@
     [super viewDidUnload];
 }
 
-#pragma - MKMapViewDelegate methods
+#pragma mark Search delegates
+
+- (BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString
+{
+	self.searchString = searchString;
+	return YES;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+	return 1;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SearchResult"];
+	if (!cell) {
+		cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"SearchResult"];
+	}
+	
+	cell.textLabel.text = self.searchString;
+	return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+	[self.searchController setActive:NO animated:YES];
+	self.buddySearchBar.text = self.searchString;
+	[self fetchCoordinates];
+}
+
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
+{
+	[self.searchController setActive:NO animated:YES];
+	self.buddySearchBar.text = self.searchString;
+	[self fetchCoordinates];
+}
+
+#pragma mark Map view delegates
+
 - (void)mapViewWillStartLoadingMap:(MKMapView *)mapView;
 {
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
@@ -89,19 +140,6 @@
     return circleView;
 }
 
-#pragma - UISearchBarDelegate methods
-
-- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar;
-{
-    self.buddySearchBar.text = searchBar.text;
-    NSLog(@"search bar %@",self.buddySearchBar.text);
-    
-    [searchBar resignFirstResponder];
-    
-    [self fetchCoordinates];
-    
-}
-
 #pragma mark geocoding stuff
 
 - (void)fetchCoordinates
@@ -111,7 +149,7 @@
         self.geocoder = [[CLGeocoder alloc] init];
     }
     
-    NSString *address = [NSString stringWithFormat:@"%@", self.buddySearchBar.text];
+    NSString *address = [NSString stringWithFormat:@"%@", self.searchString];
     [self.geocoder geocodeAddressString:address completionHandler:^(NSArray *placemarks, NSError *error) {
         if ([placemarks count] > 0) {
             CLPlacemark *placemark = [placemarks objectAtIndex:0];
