@@ -35,7 +35,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+	
 	UISearchDisplayController *searchController = [[UISearchDisplayController alloc] initWithSearchBar:self.buddySearchBar contentsController:self];
 	searchController.delegate = self;
 	searchController.searchResultsDataSource = self;
@@ -54,6 +54,7 @@
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
+
 
 - (void)viewDidUnload {
     [self setBuddyMapView:nil];
@@ -150,6 +151,7 @@
     }
     
     NSString *address = [NSString stringWithFormat:@"%@", self.searchString];
+	[[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
     [self.geocoder geocodeAddressString:address completionHandler:^(NSArray *placemarks, NSError *error) {
         if ([placemarks count] > 0) {
             CLPlacemark *placemark = [placemarks objectAtIndex:0];
@@ -175,6 +177,8 @@
                     [_buddyMapView removeOverlay:overlay];
         }
     }];
+	[[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+
 }
 
 //-(IBAction)gotoNextScreen:(id)sender {

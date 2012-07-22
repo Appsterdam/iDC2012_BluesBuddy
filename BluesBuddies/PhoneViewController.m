@@ -27,7 +27,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+	
+	//UIImageView *image = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Default" ]];
 
+	//[self.tableView setBackgroundView:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"gradient" ]]];
+	//self.tableView.alpha = 0.1f;
+	
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  

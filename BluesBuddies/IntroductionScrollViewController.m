@@ -40,12 +40,12 @@ static NSString *ImageKey = @"imageKey";
 {
     // Initialization code
     NSArray* imagesArray = [NSArray arrayWithObjects:
-                            [UIImage imageNamed:@"small_one.png"],
-                            [UIImage imageNamed:@"small_two.png"],
-                            [UIImage imageNamed:@"small_three.png"],
-                            [UIImage imageNamed:@"small_four.png"],
-                            [UIImage imageNamed:@"small_five.png"],
-                            [UIImage imageNamed:@"small_six.png"],
+                            [UIImage imageNamed:@"chat.png"],
+                            [UIImage imageNamed:@"chat.png"],
+                            [UIImage imageNamed:@"chat.png"],
+                            [UIImage imageNamed:@"chat.png"],
+                            [UIImage imageNamed:@"chat.png"],
+                            [UIImage imageNamed:@"chat.png"],
                             nil];
     
     self.contentList = imagesArray;
@@ -61,7 +61,7 @@ static NSString *ImageKey = @"imageKey";
     
     // a page is the width of the scroll view
     introductionScrollView.pagingEnabled = YES;
-    introductionScrollView.contentSize = CGSizeMake(introductionScrollView.frame.size.width * kNumberOfPages, 300);
+    introductionScrollView.contentSize = CGSizeMake(introductionScrollView.frame.size.width * kNumberOfPages, introductionScrollView.frame.size.height);
     introductionScrollView.showsHorizontalScrollIndicator = NO;
     introductionScrollView.showsVerticalScrollIndicator = NO;
     introductionScrollView.scrollsToTop = NO;
@@ -103,11 +103,11 @@ static NSString *ImageKey = @"imageKey";
     // add the controller's view to the scroll view
     if (controller.view.superview == nil)
     {
-        CGRect frame = self.introductionScrollView.frame;
-        frame.origin.x = frame.size.width * page;
-        frame.origin.y = 0;
-        controller.view.frame = frame;
         [self.introductionScrollView addSubview:controller.view];
+        CGRect frame = controller.view.frame;
+        frame.origin.x = frame.size.width * page;
+        frame.origin.y = 50;
+        controller.view.frame = frame;
         
         UIImage *image = [self.contentList objectAtIndex:page];
         [controller.introductionImageView setImage:image];

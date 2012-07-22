@@ -10,9 +10,13 @@
             <objects>
                 <viewController id="Bs5-7b-l01" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YNi-V4-DCn">
-                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.10000000149011612" contentMode="scaleToFill" image="gradient.png" id="8AU-74-0HU">
+                                <rect key="frame" x="0.0" y="-43" width="320" height="453"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="When" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eqD-ye-mEB">
                                 <rect key="frame" x="29" y="59" width="45" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -107,9 +111,13 @@
             <objects>
                 <viewController id="FuF-AV-Lra" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SWd-oQ-cLm">
-                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.10000000149011612" contentMode="scaleToFill" image="gradient.png" id="iPJ-dT-d9Z">
+                                <rect key="frame" x="0.0" y="-43" width="320" height="453"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="SvJ-mZ-wpD">
                                 <rect key="frame" x="81" y="230" width="126" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -161,6 +169,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Meetings" image="tabbarMeeting.png" id="zH7-Ck-M77"/>
                     <navigationItem key="navigationItem" title="Meeting " id="hI0-SW-f9i"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ceU-yp-eX0" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -172,11 +181,15 @@
             <objects>
                 <viewController id="FQG-Cu-Bfi" customClass="ProfileViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZMJ-mt-H1W">
-                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.10000000000000014" contentMode="scaleToFill" image="gradient.png" id="Qol-dW-hWO">
+                                <rect key="frame" x="0.0" y="-43" width="320" height="453"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="hmu-hc-XBG" userLabel="Experience Image View">
-                                <rect key="frame" x="124" y="311" width="87" height="0.0"/>
+                                <rect key="frame" x="124" y="311" width="87" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8pQ-oR-1vr" userLabel="Label - nameStatic">
@@ -275,7 +288,7 @@
             </objects>
             <point key="canvasLocation" x="-193" y="-992"/>
         </scene>
-        <!--Introduction Scroll View Controller - Meetings-->
+        <!--Introduction Scroll View Controller - Messages-->
         <scene sceneID="lgA-df-xDH">
             <objects>
                 <viewController id="6hr-2M-xkL" customClass="IntroductionScrollViewController" sceneMemberID="viewController">
@@ -284,7 +297,20 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="RR4-16-vHI">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="367"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" id="yUP-3l-8e3">
+                                        <rect key="frame" x="-20" y="-20" width="360" height="500"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" alpha="0.10000000000000014" contentMode="scaleToFill" image="gradient.png" id="auB-ra-0XC">
+                                                <rect key="frame" x="20" y="20" width="320" height="460"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
                             </scrollView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" id="w5o-jx-oMY">
                                 <rect key="frame" x="0.0" y="375" width="320" height="36"/>
@@ -296,7 +322,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Meetings" image="tabbarMeeting.png" id="Akc-gP-12G"/>
+                    <tabBarItem key="tabBarItem" title="Messages" image="tabbarMessage.png" id="Akc-gP-12G"/>
                     <connections>
                         <outlet property="introductionScrollView" destination="RR4-16-vHI" id="Tqu-AT-nuy"/>
                         <outlet property="pageControl" destination="w5o-jx-oMY" id="vQL-iS-SBF"/>
@@ -315,7 +341,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="oTY-5R-uNJ">
-                                <rect key="frame" x="0.0" y="36" width="320" height="334"/>
+                                <rect key="frame" x="0.0" y="-29" width="320" height="460"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                         </subviews>
@@ -484,7 +510,7 @@
                         <segue destination="3en-0M-hoE" kind="relationship" relationship="viewControllers" id="zfs-ge-Ym6"/>
                         <segue destination="FQG-Cu-Bfi" kind="relationship" relationship="viewControllers" id="6RT-hV-a0h"/>
                         <segue destination="6hr-2M-xkL" kind="relationship" relationship="viewControllers" id="ikr-yc-SQ8"/>
-                        <segue destination="KpM-Ev-2Eb" kind="relationship" relationship="viewControllers" id="Xtj-LD-afW"/>
+                        <segue destination="FuF-AV-Lra" kind="relationship" relationship="viewControllers" id="xMt-EI-wyq"/>
                         <segue destination="sq8-tQ-ulV" kind="relationship" relationship="viewControllers" id="2rI-sF-CdK"/>
                     </connections>
                 </tabBarController>
@@ -627,21 +653,6 @@
             </objects>
             <point key="canvasLocation" x="-2176" y="187"/>
         </scene>
-        <!--View Controller - Messages-->
-        <scene sceneID="s8j-g0-E8G">
-            <objects>
-                <viewController id="KpM-Ev-2Eb" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="lJ1-L5-GOT">
-                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Messages" image="tabbarMessage.png" id="tG0-qK-udJ"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="b8W-rW-zog" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1629" y="-1133"/>
-        </scene>
         <!--Navigation Controller - Buddies-->
         <scene sceneID="Dvs-mZ-GRn">
             <objects>
@@ -670,6 +681,7 @@
         <image name="background.png" width="640" height="960"/>
         <image name="cheeky.png" width="68" height="68"/>
         <image name="dazed.png" width="68" height="68"/>
+        <image name="gradient.png" width="640" height="960"/>
         <image name="hopeful.png" width="68" height="68"/>
         <image name="sadish.png" width="68" height="68"/>
         <image name="tabbarMeeting.png" width="30" height="30"/>
@@ -732,6 +744,7 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="sGP-mi-vQh"/>
+        <segue reference="6RT-hV-a0h"/>
+        <segue reference="xMt-EI-wyq"/>
     </inferredMetricsTieBreakers>
 </document>
