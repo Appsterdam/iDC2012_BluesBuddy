@@ -51,25 +51,29 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.
-    return 2;
+    return 3;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return 5;
+    return 3;
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section;
 {
     if (section == 0) {
-        return @"Helpline";
+        return @"Help";
+    }
+    else if (section == 1)
+    {
+        return @"Helplines";
     }
     else
     {
         return @"Friends";
+
     }
-    
     return @"";
 }
 
@@ -82,8 +86,61 @@
         cell = (UITableViewCell *) [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     }   
     // Configure the cell...
-    cell.textLabel.text = @"Detail";
-    cell.detailTextLabel.text = @"The detail view";
+    
+    if (indexPath.section == 0)
+    {
+        switch (indexPath.row) {
+            case 0:
+                cell.textLabel.text = @"Safety";
+                break;
+            case 1:
+                cell.textLabel.text = @"Guidelines";
+                break;
+            case 2:
+                cell.textLabel.text = @"About";
+                break;
+                
+            default:
+                break;
+        }
+        
+    }
+    else if (indexPath.section == 1)
+    {
+        cell.detailTextLabel.text = @"0800 123456";
+        switch (indexPath.row) {
+            case 0:
+                cell.textLabel.text = @"Samaritans";
+                break;
+            case 1:
+                cell.textLabel.text = @"Hotline";
+                break;
+            case 2:
+                cell.textLabel.text = @"Depression alliance";
+                break;
+                
+            default:
+                break;
+        }
+        
+    }
+    else
+    {
+        cell.detailTextLabel.text = @"0800 123456";
+        switch (indexPath.row) {
+            case 0:
+                cell.textLabel.text = @"John";
+                break;
+            case 1:
+                cell.textLabel.text = @"Jim";
+                break;
+            default:
+                cell.textLabel.text = @"Sally";
+                break;
+                
+        }
+    }
+//    cell.textLabel.text = @"Detail";
 
         
     
