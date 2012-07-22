@@ -12,11 +12,19 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+	UIImageView *image = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Default" ]];
+	CGRect imageFrame = image.frame;
+	imageFrame.origin.y = 20.0;
+	image.frame = imageFrame;
+	[self.window.rootViewController.view addSubview:image];
+	
 	dispatch_async(dispatch_get_main_queue(), ^{
 		UIViewController *rootController = [[self window] rootViewController];
 		UIStoryboard *storyboard = [rootController storyboard];
 		UIViewController *picker = [storyboard instantiateViewControllerWithIdentifier:@"MoodPicker"];
 		[rootController presentModalViewController:picker animated:NO];
+		
+		[image removeFromSuperview];
     });	
 	
     return YES;
